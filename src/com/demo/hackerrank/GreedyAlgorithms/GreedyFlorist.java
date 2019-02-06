@@ -19,6 +19,17 @@ public class GreedyFlorist {
         for (int i = c.length-1; i >= 0; i--) {
             cost += ((n-i-1) / k + 1) * c[i];
         }
+        /*
+               n = 8,k = 3
+               8-7-1 / 3 = 0
+               8-6-1 / 3 = 1 / 3
+               8-5-1 / 3 = 2 / 3
+               8-4-1 / 3 = 3 / 3
+               8-3-1 / 3 = 4 / 3
+               8-0-1 / 3 = 7 / 3
+
+
+         */
         return cost;
 
     }
