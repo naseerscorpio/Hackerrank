@@ -1,4 +1,7 @@
-package com.demo.hackerrank;
+package com.demo.hackerrank.StringManipulation;
+
+import java.io.IOException;
+import java.util.Scanner;
 
 public class MakeAnagrams {
 
@@ -16,4 +19,23 @@ public class MakeAnagrams {
         }
         return result;
     }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException {
+
+        String a = scanner.nextLine();
+
+        String b = scanner.nextLine();
+
+        int res = makeAnagram(a, b);
+
+        System.out.println(res);
+
+        scanner.close();
+    }
+
+
+
+
 }
