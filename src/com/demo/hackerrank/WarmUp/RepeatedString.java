@@ -1,4 +1,9 @@
-package com.demo.hackerrank;
+package com.demo.hackerrank.WarmUp;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
 
 public class RepeatedString {
 
@@ -17,5 +22,18 @@ public class RepeatedString {
             if (s.charAt(i) == 'a') a++;
         }
         return a;
+    }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException {
+        String s = scanner.nextLine();
+
+        long n = scanner.nextLong();
+
+        long result = repeatedString(s, n);
+
+        System.out.println(result);
+        scanner.close();
     }
 }
