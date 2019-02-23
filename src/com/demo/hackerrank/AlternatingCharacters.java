@@ -1,3 +1,5 @@
+package com.demo.hackerrank;
+
 public class AlternatingCharacters {
 
 
